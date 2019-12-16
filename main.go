@@ -31,7 +31,7 @@ func main() {
 	godotenv.Load()
 	flag.Parse()
 	if *help {
-		println("Toggl to Clockify exporter.")
+		println("Toggl to Clockify exporter. You should have TOGGL_USER, TOGGL_TOKEN, CLOCKIFY_TOKEN set in a .env or in your environment.")
 		println("\nUSAGE:\n  toggl-to-clockify -toggl.project=\"sumus-portal\" -clockify.workspace=\"bobheadxi\" -clockify.project=\"Sumus Portal\"")
 		println("\nFLAGS:")
 		flag.PrintDefaults()
